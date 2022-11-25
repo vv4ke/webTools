@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hack_Result>
+	<title>Method:nmap	Target:192.168.54.253</title>
+	<result>{
+    &quot;addresses&quot;:{
+        &quot;ipv4&quot;:&quot;192.168.54.253&quot;,
+        &quot;mac&quot;:&quot;00:0C:29:3F:23:90&quot;
+    },
+    &quot;hostnames&quot;:[
+        {
+            &quot;name&quot;:&quot;&quot;,
+            &quot;type&quot;:&quot;&quot;
+        }
+    ],
+    &quot;status&quot;:{
+        &quot;reason&quot;:&quot;arp-response&quot;,
+        &quot;state&quot;:&quot;up&quot;
+    },
+    &quot;tcp&quot;:{
+        &quot;22&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;cpe:/o:linux:linux_kernel&quot;,
+            &quot;extrainfo&quot;:&quot;Ubuntu Linux; protocol 2.0&quot;,
+            &quot;name&quot;:&quot;ssh&quot;,
+            &quot;product&quot;:&quot;OpenSSH&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;8.2p1 Ubuntu 4ubuntu0.3&quot;
+        }
+    },
+    &quot;vendor&quot;:{
+        &quot;00:0C:29:3F:23:90&quot;:&quot;VMware&quot;
+    }
+}</result>
+</Hack_Result>

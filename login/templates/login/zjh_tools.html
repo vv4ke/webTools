@@ -1,0 +1,63 @@
+{% extends 'login/zjh_base.html' %}
+{% load static %}
+{% block title %}tools{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <form action="/zjh_tools/" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <label><h3>使用python-nmap库对靶机进行TCP扫描</h3></label>
+          <input type="text" class="form-control" name="target_ip" placeholder="目标IP">
+        </div>
+        <button type="submit" class="btn btn-primary pull-light" name="submit" value="nmap">提交</button>
+        <br>
+        {% if nmap_result %}
+        <h4>对目标 {{target_ip}} 进行TCP扫描的结果</h4>
+        <textarea rows='10' cols='200'>{{ nmap_result }}</textarea>
+        <br>
+        <a href=/{{ xml_file_path }}  download="result.xml"> 扫描报告 </a>
+        {% endif %}
+    </form>
+    <br>
+    <form action="/zjh_tools/" method="post">
+      {% csrf_token %}
+      <div class="form-group">
+        <label><h3>对靶机FTP Server进行暴力破解</h3></label>
+        <input type="text" class="form-control" name="target_ip" placeholder="目标IP">
+        <br>
+        <input type="text" class="form-control" name="target_port" placeholder="目标PORT">
+      </div>
+      <button type="submit" class="btn btn-primary pull-light" name="submit" value="ftp">提交</button>
+      <br>
+      {% if ftp_result %}
+      <h4>对目标 {{ target_ip }} 进行FTP Server暴力破解的结果</h4>
+      <textarea rows='10' cols='200'>{{ ftp_result }}</textarea>
+      <br>
+      <a href=/{{ xml_file_path }}  download="result.xml"> 扫描报告 </a>
+      {% endif %}
+    </form>
+    <br>
+    <form action="/zjh_tools/" method="post">
+      {% csrf_token %}
+      <div class="form-group">
+        <label><h3>对靶机Web登录界面进行暴力破解</h3></label>
+        <input type="text" class="form-control" name="target_url" placeholder="目标URL">
+        <br>
+        <input type="text" class="form-control" name="data" placeholder="from表单(表单前两个是账户和密码)">
+        <br>
+        <input type="text" class="form-control" name="fail_identification" placeholder="登陆错误标识信息">
+      </div>
+      <button type="submit" class="btn btn-primary pull-light" name="submit" value="web">提交</button>
+      <br>
+      {% if web_result %}
+      <h4>对目标 {{ target_url }} 登录界面进行暴力破解的结果</h4>
+      <textarea rows='10' cols='200'>{{ web_result }}</textarea>
+      <br>
+      <a href=/{{ xml_file_path }}  download="result.xml"> 扫描报告 </a>
+      {% endif %}
+    </form>
+{% endblock %}

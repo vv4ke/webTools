@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hack_Result>
+	<title>Method:nmap	Target:192.168.54.1</title>
+	<result>{
+    &quot;addresses&quot;:{
+        &quot;ipv4&quot;:&quot;192.168.54.1&quot;,
+        &quot;mac&quot;:&quot;00:50:56:C0:00:08&quot;
+    },
+    &quot;hostnames&quot;:[
+        {
+            &quot;name&quot;:&quot;&quot;,
+            &quot;type&quot;:&quot;&quot;
+        }
+    ],
+    &quot;status&quot;:{
+        &quot;reason&quot;:&quot;arp-response&quot;,
+        &quot;state&quot;:&quot;up&quot;
+    },
+    &quot;tcp&quot;:{
+        &quot;135&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;cpe:/o:microsoft:windows&quot;,
+            &quot;extrainfo&quot;:&quot;&quot;,
+            &quot;name&quot;:&quot;msrpc&quot;,
+            &quot;product&quot;:&quot;Microsoft Windows RPC&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;&quot;
+        },
+        &quot;139&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;cpe:/o:microsoft:windows&quot;,
+            &quot;extrainfo&quot;:&quot;&quot;,
+            &quot;name&quot;:&quot;netbios-ssn&quot;,
+            &quot;product&quot;:&quot;Microsoft Windows netbios-ssn&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;&quot;
+        },
+        &quot;445&quot;:{
+            &quot;conf&quot;:&quot;3&quot;,
+            &quot;cpe&quot;:&quot;&quot;,
+            &quot;extrainfo&quot;:&quot;&quot;,
+            &quot;name&quot;:&quot;microsoft-ds&quot;,
+            &quot;product&quot;:&quot;&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;&quot;
+        },
+        &quot;808&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;cpe:/o:microsoft:windows&quot;,
+            &quot;extrainfo&quot;:&quot;&quot;,
+            &quot;name&quot;:&quot;mc-nmf&quot;,
+            &quot;product&quot;:&quot;.NET Message Framing&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;&quot;
+        },
+        &quot;902&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;&quot;,
+            &quot;extrainfo&quot;:&quot;Uses VNC, SOAP&quot;,
+            &quot;name&quot;:&quot;vmware-auth&quot;,
+            &quot;product&quot;:&quot;VMware Authentication Daemon&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;1.10&quot;
+        },
+        &quot;912&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;&quot;,
+            &quot;extrainfo&quot;:&quot;Uses VNC, SOAP&quot;,
+            &quot;name&quot;:&quot;vmware-auth&quot;,
+            &quot;product&quot;:&quot;VMware Authentication Daemon&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;1.0&quot;
+        },
+        &quot;1029&quot;:{
+            &quot;conf&quot;:&quot;3&quot;,
+            &quot;cpe&quot;:&quot;&quot;,
+            &quot;extrainfo&quot;:&quot;&quot;,
+            &quot;name&quot;:&quot;ms-lsa&quot;,
+            &quot;product&quot;:&quot;&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;&quot;
+        },
+        &quot;3306&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;cpe:/a:mysql:mysql:5.7.26&quot;,
+            &quot;extrainfo&quot;:&quot;&quot;,
+            &quot;name&quot;:&quot;mysql&quot;,
+            &quot;product&quot;:&quot;MySQL&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;5.7.26&quot;
+        },
+        &quot;5357&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;cpe:/o:microsoft:windows&quot;,
+            &quot;extrainfo&quot;:&quot;SSDP/UPnP&quot;,
+            &quot;name&quot;:&quot;http&quot;,
+            &quot;product&quot;:&quot;Microsoft HTTPAPI httpd&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;2.0&quot;
+        }
+    },
+    &quot;vendor&quot;:{
+        &quot;00:50:56:C0:00:08&quot;:&quot;VMware&quot;
+    }
+}</result>
+</Hack_Result>

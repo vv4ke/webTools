@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hack_Result>
+	<title>Method:nmap	Target:127.0.0.1</title>
+	<result>{
+    &quot;addresses&quot;:{
+        &quot;ipv4&quot;:&quot;127.0.0.1&quot;
+    },
+    &quot;hostnames&quot;:[
+        {
+            &quot;name&quot;:&quot;localhost&quot;,
+            &quot;type&quot;:&quot;PTR&quot;
+        }
+    ],
+    &quot;status&quot;:{
+        &quot;reason&quot;:&quot;localhost-response&quot;,
+        &quot;state&quot;:&quot;up&quot;
+    },
+    &quot;tcp&quot;:{
+        &quot;22&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;cpe:/o:linux:linux_kernel&quot;,
+            &quot;extrainfo&quot;:&quot;protocol 2.0&quot;,
+            &quot;name&quot;:&quot;ssh&quot;,
+            &quot;product&quot;:&quot;OpenSSH&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;8.4p1 Debian 6&quot;
+        },
+        &quot;8000&quot;:{
+            &quot;conf&quot;:&quot;10&quot;,
+            &quot;cpe&quot;:&quot;&quot;,
+            &quot;extrainfo&quot;:&quot;&quot;,
+            &quot;name&quot;:&quot;http-alt&quot;,
+            &quot;product&quot;:&quot;WSGIServer/0.2 CPython/3.8.6&quot;,
+            &quot;reason&quot;:&quot;syn-ack&quot;,
+            &quot;state&quot;:&quot;open&quot;,
+            &quot;version&quot;:&quot;&quot;
+        }
+    },
+    &quot;vendor&quot;:{}
+}</result>
+</Hack_Result>

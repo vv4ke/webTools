@@ -1,0 +1,14 @@
+{% extends 'login/zjh_base.html' %}
+{% block title %}History{% endblock %}
+{% block content %}
+<h1>{{ request.session.user_name }}最近使用记录</h1>
+<br>
+{% for user_history in user_historys  %}
+<div>
+    <h5>时间：{{ user_history.c_time }}</h5>
+    <textarea rows='5' cols='200'>{{ user_history.zjh_dic }}</textarea>
+    {% empty %}
+    <h1>无记录</h1>
+</div>
+{% endfor %}
+{% endblock %}
